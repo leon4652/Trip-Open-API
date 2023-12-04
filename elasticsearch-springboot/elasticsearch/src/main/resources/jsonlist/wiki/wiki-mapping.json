@@ -1,0 +1,120 @@
+{
+  "properties" : {
+    "@timestamp" : {
+      "type" : "date"
+    },
+    "@version" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      }
+    },
+    "_class" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      }
+    },
+    "attraction_name" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      },
+      "analyzer" : "korean",
+      "fielddata" : true
+    },
+    "content_id" : {
+      "type" : "keyword"
+    },
+    "host" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      }
+    },
+    "id" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      }
+    },
+    "match_term" : {
+      "type" : "integer"
+    },
+    "message" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      }
+    },
+    "number" : {
+      "type" : "keyword"
+    },
+    "overview" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      },
+      "analyzer" : "korean",
+      "fielddata" : true
+    },
+    "path" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      }
+    },
+    "pk_id" : {
+      "type" : "keyword"
+    },
+    "total_term" : {
+      "type" : "integer"
+    },
+    "wiki_content" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      },
+      "analyzer" : "korean",
+      "fielddata" : true
+    },
+    "wiki_title" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      },
+      "analyzer" : "korean",
+      "fielddata" : true
+    }
+  }
+}

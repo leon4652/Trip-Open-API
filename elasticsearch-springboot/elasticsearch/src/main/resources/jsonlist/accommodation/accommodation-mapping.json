@@ -1,0 +1,55 @@
+{
+  "properties" : {
+    "accommodation_addr": {
+      "fielddata": true,
+      "analyzer": "korean",
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "ignore_above": 256,
+          "type": "keyword"
+        }
+      }
+    },
+    "accommodation_name": {
+      "fielddata": true,
+      "analyzer": "korean",
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "ignore_above": 256,
+          "type": "keyword"
+        }
+      }
+    },
+    "accommodation_type": {
+      "fielddata": true,
+      "analyzer": "korean",
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "ignore_above": 256,
+          "type": "keyword"
+        }
+      }
+    },
+    "accommodation_id": {
+      "type": "keyword"
+    },
+    "accommodation_pic": {
+      "type": "keyword"
+    },
+    "accommodation_lat": {
+      "type": "float"
+    },
+    "accommodation_lng": {
+      "type": "float"
+    },
+    "accommodation_price": {
+      "type": "float"
+    },
+    "accommodation_score": {
+      "type": "float"
+    }
+  }
+}

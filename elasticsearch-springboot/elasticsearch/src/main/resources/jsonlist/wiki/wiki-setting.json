@@ -1,0 +1,81 @@
+{
+  "index" : {
+    "routing" : {
+      "allocation" : {
+        "include" : {
+          "_tier_preference" : "data_content"
+        }
+      }
+    },
+    "number_of_shards" : "1",
+    "provided_name" : "scrap_wiki_final",
+    "creation_date" : "1699840680199",
+    "analysis" : {
+      "filter" : {
+        "nori_filter" : {
+          "type" : "nori_part_of_speech",
+          "stoptags" : [
+            "E",
+            "IC",
+            "J",
+            "MAG",
+            "MM",
+            "NA",
+            "NR",
+            "SC",
+            "SE",
+            "SF",
+            "SH",
+            "SL",
+            "SN",
+            "SP",
+            "SSC",
+            "SSO",
+            "SY",
+            "UNA",
+            "UNKNOWN",
+            "VA",
+            "VCN",
+            "VCP",
+            "VSV",
+            "VV",
+            "VX",
+            "XPN",
+            "XR",
+            "XSA",
+            "XSN",
+            "XSV"
+          ]
+        },
+        "length_filter" : {
+          "type" : "length",
+          "min" : "2"
+        }
+      },
+      "analyzer" : {
+        "korean" : {
+          "filter" : [
+            "nori_readingform",
+            "nori_filter"
+          ],
+          "type" : "custom",
+          "tokenizer" : "nori_tokenizer"
+        },
+        "korean_with_length" : {
+          "filter" : [
+            "nori_readingform",
+            "nori_filter",
+            "length_filter"
+          ],
+          "type" : "custom",
+          "tokenizer" : "nori_tokenizer"
+        }
+      }
+    },
+    "number_of_replicas" : "1",
+    "uuid" : "79GeHfC9Q7uf2Fs6pV6qUg",
+    "version" : {
+      "created" : "7110299"
+    }
+  }
+}

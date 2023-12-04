@@ -1,0 +1,79 @@
+{
+  "index" : {
+    "analysis" : {
+      "tokenizer": {
+        "ngram_tokenizer": {
+          "type": "ngram",
+          "min_gram": 2,
+          "max_gram": 3
+        }
+      },
+      "filter" : {
+        "nori_filter" : {
+          "type" : "nori_part_of_speech",
+          "stoptags" : [
+            "E",
+            "IC",
+            "J",
+            "MAG",
+            "MM",
+            "NA",
+            "NR",
+            "SC",
+            "SE",
+            "SF",
+            "SH",
+            "SL",
+            "SN",
+            "SP",
+            "SSC",
+            "SSO",
+            "SY",
+            "UNA",
+            "UNKNOWN",
+            "VA",
+            "VCN",
+            "VCP",
+            "VSV",
+            "VV",
+            "VX",
+            "XPN",
+            "XR",
+            "XSA",
+            "XSN",
+            "XSV"
+          ]
+        },
+        "length_filter" : {
+          "type" : "length",
+          "min" : "2"
+        }
+      },
+      "analyzer" : {
+        "korean" : {
+          "filter" : [
+            "nori_readingform",
+            "nori_filter"
+          ],
+          "type" : "custom",
+          "tokenizer" : "nori_tokenizer"
+        },
+        "korean_with_length" : {
+          "filter" : [
+            "nori_readingform",
+            "nori_filter",
+            "length_filter"
+          ],
+          "type" : "custom",
+          "tokenizer" : "nori_tokenizer"
+        },
+        "korean_ngram": {
+          "type": "custom",
+          "tokenizer": "ngram_tokenizer",
+          "filter": ["nori_readingform", "nori_filter"]
+        }
+      }
+    },
+    "number_of_shards" : "1"
+  }
+}

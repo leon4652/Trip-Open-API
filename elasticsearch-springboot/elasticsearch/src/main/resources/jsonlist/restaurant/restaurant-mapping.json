@@ -1,0 +1,58 @@
+{
+  "properties" : {
+    "food_id" : {
+      "type" : "keyword"
+    },
+    "food_name" : {
+      "fielddata" : true,
+      "analyzer" : "korean",
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "ignore_above" : 256,
+          "type" : "keyword"
+        }
+      }
+    },
+    "food_type_main" : {
+      "fielddata" : true,
+      "analyzer" : "korean",
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "ignore_above" : 256,
+          "type" : "keyword"
+        }
+      }
+    },
+    "food_type_sub" : {
+      "fielddata" : true,
+      "analyzer" : "korean",
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "ignore_above" : 256,
+          "type" : "keyword"
+        }
+      }
+    },
+    "food_longitude" : {
+      "type" : "float"
+    },
+    "food_latitude" : {
+      "type" : "float"
+    },
+    "food_like" : {
+      "type" : "integer"
+    },
+    "food_score" : {
+      "type" : "integer"
+    },
+    "food_star" : {
+      "type" : "float"
+    },
+    "food_star_user" : {
+      "type" : "integer"
+    }
+  }
+}
