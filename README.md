@@ -85,13 +85,15 @@
 
 ## 🧝‍♂️팀원 및 역할  
 
-| **팀장** | 신창학 (BE: Elastic search API, Kibana 데이터시각화, Logstash 데이터 수집, Spring API 서버 구축 및 데이터 신뢰성 처리, Infra : Sub server Infra 구축 )   |
-|----------|---------------------|
-| **팀원** | 강현곤 (BE: 숙소 데이터 스크래핑 및 API 구축, FE : Docs Site 구축)             |
-| **팀원** | 이지현 (BE: 음식점 데이터 스크래핑 및 API 구축, FE : Docs Site 구축)  |
-| **팀원** | 이진호 (Infra : EC2, nginx, docker, jenkins 세팅)     |
-| **팀원** | 정형준 (BE: 데이터 스크래핑 보조 및 숙소 데이터 API 구축, 토큰 발급 처리(처리율 제한) 및 부하테스트) |
-| **팀원** | 홍유빈 (BE: 전자사전 스크래핑 및 전처리, Docs API 구축, 토큰 발급 처리(처리율 제한) 및 부하테스트 )  |
+| 이름  | 직위 | 역할 | 내용 |
+| :----: |:----:|:----:|------|
+|  신창학  | 팀장 | Leader & Backend |  BE: Spring Data Elasticsearch API 서버 구축(유사도 검색, 전문 검색, 비즈니스 로직) <br> Kibana 데이터시각화, Logstash 로그 데이터 수집, 수집 데이터 신뢰성 처리, <br> Infra : Sub server Infra 구축(EC2, Nginx) |
+|  강현곤  | 팀원 | Fullstack | BE: 숙소 데이터 스크래핑 및 API 구축 <br> FE: Docs Site 구축 |
+| 이지현 | 팀원 | Fullstack |  BE: 음식점 데이터 스크래핑 및 API 구축 <br> FE: Docs Site 구축 |
+|이진호| 팀원 | Infra |  Main server EC2, nginx, docker, jenkins 세팅 |
+| 정형준 | 팀원 | Backend |  데이터 스크래핑 보조 및 숙소 데이터 API 구축, 토큰 발급 처리(처리율 제한) 및 부하테스트 |
+| 홍유빈 | 팀원 | Backend |  전자사전 스크래핑 및 전처리, Docs API 구축, 토큰 발급 처리(처리율 제한) 및 부하테스트 |
+
 
 ## 👨‍👩‍👧협업 툴  
 
